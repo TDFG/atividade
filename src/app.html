@@ -1,0 +1,25 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">IMC</h1>
+
+
+		<lightning-input type="text" label="Nome" onchange={handleOnChangeNome}>
+		</lightning-input>
+
+
+		<lightning-input type="number" label="Peso" onchange={handleOnChangePeso}>
+		</lightning-input>
+
+
+		<lightning-input type="number" label="Altura" onchange={handleOnChangeAltura}></lightning-input>
+
+		<br/>
+		<p>{resultado}</p>
+
+		<lightning-button variant="brand" label="Calcular IMC" title="Primary action" class="slds-m-left_x-small"
+			onclick={calculaImc}>
+
+
+		</lightning-button>
+	</div>
+</template>
